@@ -79,7 +79,9 @@
         .video{
             width: 60%;
         }
-        
+        .text{
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -108,7 +110,7 @@
         </main>
         <aside class="right">
             <div class="top a">
-                <h4>Giới Thiệu</h4>
+                <h4 >Giới Thiệu</h4>
                 <a><img class="video" src="./camera_lense_0.jpeg"></a>
                 <p>Bài tập lập trình Web</p>
             </div>
@@ -192,10 +194,10 @@
         if (detailElement) {
             detailElement.innerHTML = `
                 <h4>${thongtin.tieude}</h4>
-                <p>${thongtin.ngaydang}</p>
-                <p>${thongtin.noidung1}</p>
+                <p >${thongtin.ngaydang}</p>
+                <p class="text">${thongtin.noidung1}</p>
                 <a href="#"><img class="video" src="${thongtin.Image}"></a>
-                <p>${thongtin.noidung2}</p>
+                <p class="text">${thongtin.noidung2}</p>
             `;
         } else {
             console.error("Không tìm thấy phần tử với class 'detail'");
