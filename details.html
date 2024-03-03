@@ -62,14 +62,10 @@
         }
         main{
             flex: 3 3 100px;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-        }
-        .item{
             background-color: white;
-            display: flex;
-            flex-direction: column;
         }
+        
+
         .right{
             flex: 1 1 100px;
             display: flex;
@@ -107,43 +103,8 @@
         </div>
     </nav>
     <div class="main">
-        <main>
-            <div class="item1 item">
-                <h4>Giới Thiệu 1</h4>
-                <p>Ngay 12/2/1022</p>
-                <a href="./details.html?id=1"><img class="video" src="./camera_lense_0.jpeg"></a>
-                <p>Bài tập lập trình Web</p>
-           </div>
-           <div class="item2 item">
-                <h4>Giới Thiệu 2</h4>
-                <p>Ngay 12/2/1022</p>
-                <a href="./details.html?id=2"><img class="video" src="./camera_lense_0.jpeg"></a>
-                <p>Bài tập lập trình Web</p>
-            </div>
-            <div class="item3 item">
-                <h4>Giới Thiệu 3</h4>
-                <p>Ngay 12/2/1022</p>
-                <a href="./details.html?id=3"><img class="video" src="./camera_lense_0.jpeg"></a>
-                <p>Bài tập lập trình Web</p>
-            </div>
-            <div class="item4 item">
-                <h4>Giới Thiệu 4</h4>
-                <p>Ngay 12/2/1022</p>
-                <a href="./details.html?id=4"><img class="video" src="./camera_lense_0.jpeg"></a>
-                <p>Bài tập lập trình Web</p>
-            </div>
-            <div class="item5 item">
-                <h4>Giới Thiệu 5</h4>
-                <p>Ngay 12/2/1022</p>
-                <a href="./details.html?id=5"><img class="video" src="./camera_lense_0.jpeg"></a>
-                <p>Bài tập lập trình Web</p>
-            </div>
-            <div class="item6 item">
-                <h4>Giới Thiệu 6</h4>
-                <p>Ngay 12/2/1022</p>
-                <a href="./details.html?id=6"><img class="video" src="./camera_lense_0.jpeg"></a>
-                <p>Bài tập lập trình Web</p>
-            </div>
+        <main class="detail">
+            
         </main>
         <aside class="right">
             <div class="top a">
@@ -170,6 +131,75 @@
     <footer>
         <p>Website được nhiều người xem nhất - Thuộc khoa CNTT</p>
     </footer>
-    
+
+    <script>
+        let baibao = [
+            {
+                id:1,
+                tieude: "Giới Thiệu 1",
+                ngaydang: "23/3/2023",
+                noidung1:"Bài tập lập trình Web",
+                Image: "./camera_lense_0.jpeg",
+                noidung2: "Bài tập lập trình Web"
+            },
+            {
+                id:2,
+                tieude: "Giới Thiệu 2",
+                ngaydang: "23/3/2023",
+                noidung1:"Bài tập lập trình Web",
+                Image: "./camera_lense_0.jpeg",
+                noidung2: "Bài tập lập trình Web"
+            },
+            {
+                id:3,
+                tieude: "Giới Thiệu 3",
+                ngaydang: "23/3/2023",
+                noidung1:"Bài tập lập trình Web",
+                Image: "./camera_lense_0.jpeg",
+                noidung2: "Bài tập lập trình Web"
+            },
+            {
+                id:4,
+                tieude: "Giới Thiệu 4",
+                ngaydang: "23/3/2023",
+                noidung1:"Bài tập lập trình Web",
+                Image: "./camera_lense_0.jpeg",
+                noidung2: "Bài tập lập trình Web"
+            },
+            {
+                id:5,
+                tieude: "Giới Thiệu 5",
+                ngaydang: "23/3/2023",
+                noidung1:"Bài tập lập trình Web",
+                Image: "./camera_lense_0.jpeg",
+                noidung2: "Bài tập lập trình Web"
+            },
+            {
+                id:6,
+                tieude: "Giới Thiệu 6",
+                ngaydang: "23/3/2023",
+                noidung1:"Bài tập lập trình Web",
+                Image: "./camera_lense_0.jpeg",
+                noidung2: "Bài tập lập trình Web"
+            }];
+
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+        let thongtin = baibao.find((e)=> e.id==id);
+        console.log(id);
+        let detailElement = document.querySelector(".detail");
+
+        if (detailElement) {
+            detailElement.innerHTML = `
+                <h4>${thongtin.tieude}</h4>
+                <p>${thongtin.ngaydang}</p>
+                <p>${thongtin.noidung1}</p>
+                <a href="#"><img class="video" src="${thongtin.Image}"></a>
+                <p>${thongtin.noidung2}</p>
+            `;
+        } else {
+            console.error("Không tìm thấy phần tử với class 'detail'");
+        }
+    </script>
 </body>
 </html>
