@@ -13,7 +13,7 @@
             margin: 5px;
         }
         body{
-            height: 98vh;
+            height: 95vh;
             background: #D8E4F4;
             text-align: center;
             display: flex;
@@ -70,6 +70,7 @@
             display: flex;
             flex-direction: column;
             text-align: left;
+            padding: 5px;
         }
         .right{
             flex: 1 1 100px;
@@ -80,6 +81,7 @@
             background-color: white;
             display: flex;
             flex-direction: column;
+            padding: 10px;
         }
         .video{
             width: 95%;
@@ -94,6 +96,22 @@
             width: 90%;
             height: 200px;
         }
+        
+        .margin-bottom{
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+        .middle{
+            margin: 0;
+            padding: 0;
+        }
+        .follow{
+            margin-bottom: 0;
+        }
+        .icon{
+            margin-top: 0;
+        }
+        
     </style>
 </head>
 <body>
@@ -168,7 +186,7 @@
                 <p>Bài tập lập trình Web</p>
             </div>
             <div class="mid a">
-                <h5>Follow Me</h5>
+                <h5 class="follow">Follow Me</h5>
                 <div class="icon">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-square-twitter"></i>
@@ -177,15 +195,14 @@
                 </div>
             </div>
             <div class="bottom a">
-                <h5>Liên hệ</h5>
-                <p>Điện Thoại : 0966 786 666</p>
-                <p>Email: btweb@gmail.com</p>
+                <h5 class="margin-bottom">Liên hệ</h5>
+                <p class="middle">Điện Thoại : 0966 786 666</p>
+                <p class="margin-top">Email: btweb@gmail.com</p>
             </div>
         </aside>
     </div>
     <footer>
         <p>Website được nhiều người xem nhất - Thuộc khoa CNTT</p>
     </footer>
-    
 </body>
 </html>
