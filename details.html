@@ -1,89 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        *{
+        * {
             margin: 5px;
         }
-        body{
+
+        body {
             height: 98vh;
             background: #D8E4F4;
             text-align: center;
             display: flex;
             flex-direction: column;
         }
-        header{
+
+        header {
             background: white;
             padding: 1.5em 0 1.5em 0;
             margin-bottom: 0;
         }
-        .navbar{
+
+        .navbar {
             margin-top: 0;
             padding: 0;
         }
-        .container-fluid{
+
+        .container-fluid {
             background-color: #26287B;
             margin: 0;
         }
-        .navbar-nav,.login{
+
+        .navbar-nav,
+        .login {
             display: flex;
             flex-direction: row;
             color: white;
             padding: 0;
             margin: 0;
         }
-        .nav-link{
+
+        .nav-link {
             color: white;
             margin-top: 0;
             margin-bottom: 0;
             padding-top: 0;
             padding-bottom: 0;
         }
-        .login{
+
+        .login {
             padding-top: 15px;
         }
-        nav{
+
+        nav {
             background: #26287B;
         }
-        footer{
-            background:white;
+
+        footer {
+            background: white;
             padding: 1em 0 0 0;
         }
-        .main{
+
+        .main {
             display: flex;
             flex: 1;
         }
-        main{
+
+        main {
             flex: 3 3 100px;
             background-color: white;
         }
-        
 
-        .right{
+
+        .right {
             flex: 1 1 100px;
             display: flex;
             flex-direction: column;
         }
-        .top,.mid,.bottom{
+
+        .top,
+        .mid,
+        .bottom {
             background-color: white;
             display: flex;
             flex-direction: column;
         }
-        .video{
+
+        .video {
             width: 60%;
         }
-        .text{
+
+        .text {
             text-align: left;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>ASM WEB B2</h1>
@@ -106,11 +132,11 @@
     </nav>
     <div class="main">
         <main class="detail">
-            
+
         </main>
         <aside class="right">
             <div class="top a">
-                <h4 >Giới Thiệu</h4>
+                <h4>Giới Thiệu</h4>
                 <a><img class="video" src="./camera_lense_0.jpeg"></a>
                 <p>Bài tập lập trình Web</p>
             </div>
@@ -137,57 +163,57 @@
     <script>
         let baibao = [
             {
-                id:1,
+                id: 1,
                 tieude: "Chia tay để khởi đầu mới",
                 ngaydang: "Thứ bảy, 19/12/2015 06:00 GMT+7",
-                noidung1:"Nhiều khán giả cảm thấy tiếc nuối khi biết BTV Trần Long sẽ không còn dẫn trên các bản tin của VTV. Tuy nhiên, anh không quên hẹn gặp lại khán giả với một hình ảnh mới.",
-                Image: "./image/bbbbb.jpg",
+                noidung1: "Nhiều khán giả cảm thấy tiếc nuối khi biết BTV Trần Long sẽ không còn dẫn trên các bản tin của VTV. Tuy nhiên, anh không quên hẹn gặp lại khán giả với một hình ảnh mới.",
+                Image: "./image/aaaa.jpg",
                 noidung2: "Nhiều khán giả tiếc nuối khi biết tin anh không còn dẫn trên các Bản tin của VTV. Như anh chia sẻ, việc chia tay thực ra là để có một khởi đầu mới. Vậy cụ thể đó là gì?"
             },
             {
-                id:2,
+                id: 2,
                 tieude: "Cướp tiệm vàng bằng súng",
                 ngaydang: "Chủ nhật, 3/3/2024, 14:02 (GMT+7)",
-                noidung1:"Bốn người đi trên hai xe máy, cầm súng xông vào tiệm kim hoàn Bích Qúy cướp khoảng 20 lượng vàng nữ trang rồi tẩu thoát.",
+                noidung1: "Bốn người đi trên hai xe máy, cầm súng xông vào tiệm kim hoàn Bích Qúy cướp khoảng 20 lượng vàng nữ trang rồi tẩu thoát.",
                 Image: "./image/bbbbb.jpg",
                 noidung2: "Khoảng 12h ngày 3/3, 2 nam 2 nữ đi trên xe máy biển số TP HCM và Bình Phước dừng trước tiệm vàng tại thị trấn Lai Uyên, huyện Bàu Bàng. Họ xông vào bên trong, một người chĩa súng đe dọa chủ tiệm, đập tủ kính trưng bày cướp đi lượng lớn vàng nữ trang."
             },
             {
-                id:3,
+                id: 3,
                 tieude: "Messi lập cú đúp",
                 ngaydang: "Chủ nhật, 3/3/2024, 06:52 (GMT+7)",
-                noidung1:"Lionel Messi lần đầu trong sự nghiệp lập cú đúp mà không cần dùng chân, khi Inter Miami thắng đội khách Orlando City 5-0 ở vòng 3 MLS 2024.",
+                noidung1: "Lionel Messi lần đầu trong sự nghiệp lập cú đúp mà không cần dùng chân, khi Inter Miami thắng đội khách Orlando City 5-0 ở vòng 3 MLS 2024.",
                 Image: "./image/ccccc.jpg",
                 noidung2: "Messi lập cú đúp đầu tiên ở MLS 2024, theo cách ít ai nghĩ tới. Phút 57, từ tình huống hậu vệ đội khách phá bóng trên vạch ra trước cầu môn, siêu sao 37 tuổi lao vào dùng ngực đỡ bóng nhưng vô tình thành pha dứt điểm lập bập vào lưới. Chỉ năm phút sau, Luis Suarez tạt bóng từ bên trái sang cột hai cho Messi lao vào đánh đầu về góc xa ấn định thắng lợi 5-0 cho Inter Miami."
             },
             {
-                id:4,
+                id: 4,
                 tieude: "Trọng tài cắt còi sớm một giây",
                 ngaydang: "Chủ nhật, 3/3/2024, 08:47 (GMT+7)",
-                noidung1:"Trọng tài Gil Manzano khiến Jude Bellingham và các đồng đội nổi đoá, khi cắt còi tan trận một giây trước khi Real chọc thủng lưới Valencia ở vòng 27 La Liga.",
+                noidung1: "Trọng tài Gil Manzano khiến Jude Bellingham và các đồng đội nổi đoá, khi cắt còi tan trận một giây trước khi Real chọc thủng lưới Valencia ở vòng 27 La Liga.",
                 Image: "./image/dddddd.jpg",
                 noidung2: "Từ quả phạt góc bên trái vào của Luka Modric, bóng bị thủ môn Valencia Giorgi Mamardashvili phá ra. Brahim Diaz đón được rồi dẫn bóng sang phải, trước khi tạt lại vào cấm địa cho Bellingham. Tiền vệ người Anh bật cao hơn tất thảy, đánh đầu căng hướng về khung thành của Valencia."
             },
             {
-                id:5,
+                id: 5,
                 tieude: "Đại chiến Man City - Man Utd",
                 ngaydang: "Chủ nhật, 3/3/2024, 14:38 (GMT+7)",
-                noidung1:"Hệ thống thiếu gắn kết của Man Utd và sự bùng nổ của hàng công Man City sẽ là những yếu tố định đoạt trận derby Manchester hôm nay.",
+                noidung1: "Hệ thống thiếu gắn kết của Man Utd và sự bùng nổ của hàng công Man City sẽ là những yếu tố định đoạt trận derby Manchester hôm nay.",
                 Image: "./image/eeeee.jpg",
                 noidung2: "Một trong những vấn đề nhức nhối nhất của Man Utd từ đầu mùa là sự thiếu gắn kết giữa các vị trí trong đội. Hàng phòng ngự cố gắng lùi sâu, có thể do thiếu tốc độ và không dám dâng cao, trong khi hàng công cố gắng pressing, áp sát hậu vệ đối phương. Từ đó khung trung tuyến của Man Utd lộ nhiều khoảng trống để đối phương khai thác."
             },
             {
-                id:6,
+                id: 6,
                 tieude: "Mất bao lâu nồng độ cồn về 0?",
                 ngaydang: "Chủ nhật, 23/3/2024, 14:38 (GMT+7)",
-                noidung1:"Uống 1 cốc bia mất bao lâu để nồng độ cồn về 0? bởi điều này tùy thuộc từng người.",
+                noidung1: "Uống 1 cốc bia mất bao lâu để nồng độ cồn về 0? bởi điều này tùy thuộc từng người.",
                 Image: "./image/gggggg.jpg",
                 noidung2: "Tổ chức Y tế thế giới (WHO) đưa ra khái niệm đơn vị cồn như sau: Một đơn vị cồn tương đương với 10 g cồn ethanol nguyên chất, bằng 200 ml bia; 75 ml rượu vang (1 ly); 25 ml rượu mạnh (1 chén). Tùy vào lượng uống sẽ quy ra khoảng bao nhiêu đơn vị cồn."
             }];
 
         let urlParams = new URLSearchParams(window.location.search);
         let id = urlParams.get("id");
-        let thongtin = baibao.find((e)=> e.id==id);
+        let thongtin = baibao.find((e) => e.id == id);
         console.log(id);
         let detailElement = document.querySelector(".detail");
 
@@ -204,4 +230,5 @@
         }
     </script>
 </body>
+
 </html>
